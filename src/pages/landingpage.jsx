@@ -3,10 +3,10 @@ import Navbar from '../components/landing/Navbar';
 import Hero from '../components/landing/Hero';
 import Problem from '../components/landing/Problem';
 import Solution from '../components/landing/Solution';
-import SmartTile from '../components/landing/SmartTile';
+import SmartTile from '../components/landing/smartTitle';
 import HowItWorks from '../components/landing/HowItWorks';
 import Technology from '../components/landing/Technology';
-import Features from '../components/landing/Features';
+import Features from '../components/landing/feature';
 import CTA from '../components/landing/CTA';
 import '../styles/landing.css';
 
