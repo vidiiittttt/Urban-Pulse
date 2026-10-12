@@ -1,6 +1,20 @@
-// Merge by hand if your teammates already changed App.jsx (e.g. routes for /simulation, /dashboard).
-import LandingPage from './pages/LandingPage';
+import LandingPage from './pages/landingpage';
+import { UrbanPulseSimulationView } from './components/simulation/UrbanPulseSimulation';
+import DashboardPage from './pages/dashboard';
+import { SimulationProvider } from './components/simulation/SimulationContext';
 
 export default function App() {
-  return <LandingPage />;
+  const path = window.location.pathname;
+
+  return (
+    <SimulationProvider>
+      {path === '/simulation' ? (
+        <UrbanPulseSimulationView />
+      ) : path === '/dashboard' ? (
+        <DashboardPage />
+      ) : (
+        <LandingPage />
+      )}
+    </SimulationProvider>
+  );
 }

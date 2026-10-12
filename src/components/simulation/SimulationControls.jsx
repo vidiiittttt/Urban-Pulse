@@ -26,14 +26,14 @@ export const SimulationControls = () => {
       </div>
 
       <div className="grid grid-cols-2 gap-2">
-        <button 
+        <button
           onClick={() => simulateVehicle()}
           className="px-3 py-2 bg-cyan-600/30 hover:bg-cyan-600/50 border border-cyan-500/40 text-cyan-300 rounded-lg text-xs font-mono font-semibold transition"
         >
           + Spawn Random Vehicle
         </button>
 
-        <button 
+        <button
           onClick={simulateEmergencyVehicle}
           className="px-3 py-2 bg-red-600/40 hover:bg-red-600/60 border border-red-500 text-red-200 rounded-lg text-xs font-mono font-bold transition shadow-[0_0_12px_rgba(239,68,68,0.3)]"
         >

@@ -19,5 +19,4 @@ export const TrafficLight = ({ state = 'RED', direction = 'N' }) => {
 };
 
 
-export { TrafficLight };
 export default TrafficLight;

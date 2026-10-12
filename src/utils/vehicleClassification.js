@@ -6,7 +6,7 @@ import { VEHICLE_PROPERTIES } from '../data/simulationData';
  */
 export const generateSimulatedSensorSignature = (vehicleType) => {
   const profile = VEHICLE_PROPERTIES[vehicleType.toUpperCase()] || VEHICLE_PROPERTIES.CAR;
-  
+
   const piezoPeak = Number((Math.random() * (profile.piezoRange[1] - profile.piezoRange[0]) + profile.piezoRange[0]).toFixed(2));
   const triboPeak = Number((Math.random() * (profile.triboRange[1] - profile.triboRange[0]) + profile.triboRange[0]).toFixed(2));
   const magPeak = Number((Math.random() * (profile.magRange[1] - profile.magRange[0]) + profile.magRange[0]).toFixed(2));

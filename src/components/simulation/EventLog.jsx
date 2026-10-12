@@ -25,7 +25,7 @@ export const EventLog = () => {
 
       <div className="flex-1 overflow-y-auto space-y-1.5 pr-1 font-mono text-[11px] scrollbar-thin">
         {events.map((event) => (
-          <div 
+          <div
             key={event.id}
             className={`p-1.5 rounded border ${getEventStyle(event.type)} flex items-start gap-2 transition-all`}
           >
