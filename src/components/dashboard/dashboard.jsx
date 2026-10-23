@@ -19,6 +19,7 @@ import {
 } from 'lucide-react';
 import { useSimulation } from '../simulation/SimulationContext';
 import { Intersection } from '../simulation/Intersection';
+import BaselineComparison from './BaselineComparison';
 
 const Card = ({
   title,
@@ -915,6 +916,7 @@ export default function Dashboard() {
           </Section>
         </div>
 
+<BaselineComparison />
         <div className="mb-6 grid grid-cols-1 gap-6 xl:grid-cols-2">
           <Section
             title="LIVE EVENT FEED"
